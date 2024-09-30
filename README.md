@@ -59,7 +59,7 @@ This model stores certification information for a specific project.
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone (https://github.com/Girish023/Clg_Loc_Using-Django.git
    cd DjangoVarity
    ```
 
