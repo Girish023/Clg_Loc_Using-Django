@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+Test contents for forms
+<form method="POST" class="text-black">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit"> Search Subject</button>
+</form>
+{% if locations %}
+    <h2> Subjects available</h2>
+    <ul>
+        {% for location in locations %}
+        <li> {{location.name}} - {{location.location}}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endblock %}
